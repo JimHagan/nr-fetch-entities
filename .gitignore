@@ -4,3 +4,4 @@ config.py
 entities*.txt
 entities*.csv
 entity_types.csv
+*.bak

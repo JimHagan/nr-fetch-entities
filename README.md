@@ -1,4 +1,4 @@
-# `fetch_entities.py` - Multi-Threaded New Relic Entity Fetcher
+# nr-fetch-entities  - Multi-Threaded New Relic Entity Fetcher
 
 This Python program fetches entities from New Relic accounts using the NerdGraph API. It supports fetching entities from multiple accounts, filtering by entity `domains`, and outputting the results to text and CSV files. It also includes progress bars for a better user experience for longer running jobs.
 
@@ -98,7 +98,7 @@ To run the program make sure your virtualenv is activated and use the following 
 
 
 ```
-python fetch_entities.py
+python nr-fetch-entities.py
 ```
 
 What Happens:
@@ -115,7 +115,7 @@ It is possible to optimize the run by setting the `max_threads` parameter.
 By default this is set to `1` however the following example would set it to `2` so if you are running it against 2 accounts it will process both simultaneously.
 
 ```
-python fetch_entities.py --max_threads 2
+python nr-fetch-entities.py --max_threads 2
 ```
 
 Be aware that the API may subject the client to some rate limiting so don't overuse this.
